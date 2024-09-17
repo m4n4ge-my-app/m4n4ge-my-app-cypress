@@ -17,7 +17,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.get('.css-14mo1hq').should('be.visible')
   })
 
-  it.only('should prevent demo user from adding a new application', () => {
+  it('should prevent demo user from adding a new application', () => {
     cy.visit('/')
 
     //click on the sign in button
