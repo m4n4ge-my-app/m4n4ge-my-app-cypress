@@ -1,4 +1,4 @@
-describe('m4n4ge-my-app', () => {
+describe('m4n4ge-my-app: dashboard tests', () => {
   it('logs in successfully', () => {
     cy.visit('/')
 
