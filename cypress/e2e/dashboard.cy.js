@@ -61,4 +61,42 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.contains('div', 'Access Denied: Demonstration accounts do not have the privileges to add an application. Please create a personal account for full access.').should('be.visible')
     cy.location('pathname').should('equal', '/add')
   })
+
+  it('should prevent demo user from deleting a new application while on dashboad page', () => {
+    cy.visit('/')
+
+    //click on the sign in button
+    cy.get(':nth-child(1) > a > .MuiButtonBase-root').click()
+
+    //fill the email and password fields and click on the sign in button
+    cy.get('input[name="email"]').type('new_user@m4n4gemy.app')
+    cy.get('input[name="password"]').type(Cypress.env('NEW_USER_PASSWORD'))
+    cy.contains('button', 'Sign In').click()
+
+    //switch to expert user account as new user have no applications to delete
+    cy.contains('label', 'John Doe (Expert User)').click().wait(1000)
+
+    //close/acknowledge the demo user banner
+    cy.get('.css-14mo1hq > .MuiButton-root').click().wait(1000)
+
+    //check if expert user data is loaded
+    //1. check if the greating message uses the correct name
+    cy.contains('h6', 'John').should('be.visible')
+    //2. check if the avatar displays the correct first letter of the name
+    cy.get('div.MuiAvatar-root').should('contain', 'J')
+
+    //find the fist application and click on it to get the delete button  and click it
+    cy.get('tbody>tr').first().click().contains('button', 'Delete').click()
+
+    //cofirm that delete confirmation modal appears
+    cy.contains('h2#modal-modal-title', 'Delete Application').should('be.visible')
+    cy.contains('p#modal-modal-description', 'Are you sure you want to delete').should('be.visible')
+
+    //click on the proceed button in the 
+    cy.contains('button', 'Proceed').click()
+
+    //check if the user actions gets blocked and the error message is displayed
+    cy.contains('div', 'Access Denied: Demonstration accounts do not have the privileges to delete an application. Please create a personal account for full access.').should('be.visible')
+  })
+
 })
