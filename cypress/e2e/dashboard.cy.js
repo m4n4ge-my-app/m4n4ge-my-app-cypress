@@ -142,4 +142,39 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.contains('div', 'Access Denied: Demonstration accounts do not have the privileges to delete an application. Please create a personal account for full access.').should('be.visible')
   })
 
+  it('should prevent demo user from editing an existing application', () => {
+    cy.visit('/')
+
+    //click on the sign in button
+    cy.get(':nth-child(1) > a > .MuiButtonBase-root').click()
+
+    //fill the email and password fields and click on the sign in button
+    cy.get('input[name="email"]').type('new_user@m4n4gemy.app')
+    cy.get('input[name="password"]').type(Cypress.env('NEW_USER_PASSWORD'))
+    cy.contains('button', 'Sign In').click()
+
+    //switch to expert user account as new user have no applications to edit
+    cy.contains('label', 'John Doe (Expert User)').click().wait(1000)
+
+    //close/acknowledge the demo user banner
+    cy.get('.css-14mo1hq > .MuiButton-root').click().wait(1000)
+
+    //find the fist application and click on it to get the edit button  and click it
+    cy.get('tbody>tr').first().click().contains('button', 'Edit').click()
+
+    //check if the user is redirected to the edit application page
+    cy.location('pathname').should('include', '/edit')
+
+    //check if the employer name field has a value
+    cy.get('input[name="employerName"]').should('have.value', 'Zoom')
+
+    //change the employer name and submit the form
+    cy.get('input[name="employerName"]').clear().type('Test Employer')
+    cy.contains('button', 'Save Changes').click()
+
+    //check if the user actions gets blocked and the error message is displayed
+    cy.contains('div', 'Access Denied: Demonstration accounts do not have the privileges to update an application. Please create a personal account for full access.').should('be.visible')
+    cy.location('pathname').should('include', '/edit')
+  })
+
 })
