@@ -48,17 +48,29 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     .print('dates %o')
   }
 
+  function getTableEmployerNames(parentTabke) {
+    return cy.wrap(parentTabke)
+    .find('.employerName')
+    .map('innerText')
+    .print('dates %o')
+  }
+
   /**
- * @param { 'asc' | 'desc' } order
+ * @param { 'asc' | 'desc' | 'az' | 'za'} order
  */
   function verifyApplicationsTableSortOrder(order) {
-    expect(order, 'order').to.be.oneOf(['asc', 'desc'])
+    expect(order, 'order').to.be.oneOf(['asc', 'desc', 'az', 'za'])
     cy.get('.applications-table').within(($table) => {
-      const _order = order === 'asc' ? 'ascending' : 'descending'
+      const _order = (order === 'asc' || order === 'az') ? 'ascending' : (order === 'desc' || order === 'za') ? 'descending' : 'unknown'
 
       // Using chai-sorted plugin for the same assertion
+      if(order === 'asc' || order === 'desc') {
       getTableDates($table)
         .should(`be.${_order}`)
+      } else {
+        getTableEmployerNames($table)
+          .should(`be.${_order}`)
+      }
     })
   }
 
@@ -210,6 +222,46 @@ describe('m4n4ge-my-app: dashboard tests', () => {
         if (!$nextButton.is(':disabled')) {
           cy.wrap($nextButton).click().wait(1000)
           verifyAllPages()
+        }
+      })
+    }
+  
+    verifyAllPages()
+  })
+
+  it('should sort the employer names in ascending order', () => {
+    selectExpertUser()
+    cy.get("#expandCollapseButton").click().wait(1000)
+
+    // Sort the applications by employer name in ascending order by clicking on the date column header
+    cy.contains('span', 'Employer Name').click().wait(1000)
+  
+    function verifyAllPages() {
+      verifyApplicationsTableSortOrder('az')
+      cy.get('button[aria-label="Go to next page"]').then($nextButton => {
+        if (!$nextButton.is(':disabled')) { // Ensure to stop the recursion when the next button is disabled
+          cy.wrap($nextButton).click().wait(1000)
+          verifyAllPages() // Recursively call the function for the next page
+        }
+      })
+    }
+  
+    verifyAllPages()
+  })
+
+  it('should sort the employer names in descending order', () => {
+    selectExpertUser()
+    cy.get("#expandCollapseButton").click().wait(1000)
+
+    // Sort the applications by employer name in ascending order by clicking on the date column header
+    cy.contains('span', 'Employer Name').click().wait(500).click().wait(500) // dblClick is not working so click twice
+  
+    function verifyAllPages() {
+      verifyApplicationsTableSortOrder('za')
+      cy.get('button[aria-label="Go to next page"]').then($nextButton => {
+        if (!$nextButton.is(':disabled')) { // Ensure to stop the recursion when the next button is disabled
+          cy.wrap($nextButton).click().wait(1000)
+          verifyAllPages() // Recursively call the function for the next page
         }
       })
     }
