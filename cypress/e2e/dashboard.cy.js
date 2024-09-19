@@ -54,26 +54,6 @@ describe('m4n4ge-my-app: dashboard tests', () => {
   function verifyApplicationsTableSortOrder(order) {
     expect(order, 'order').to.be.oneOf(['asc', 'desc'])
     cy.get('.applications-table').within(($table) => {
-
-      // cy.wrap($table)
-      //   .find('.applicationDate')
-      //   .map('innerText')
-      //   .print('dates %o')
-      //   .then((dates) => {
-      //   const sortedDates = [...dates].sort()
-      //   expect(dates).to.deep.equal(sortedDates)
-      // })
-
-      // Alternative way to assert the sort order
-      // cy.wrap($table)
-      //   .find('.applicationDate')
-      //   .map('innerText')
-      //   .print('dates %o')
-      //   .should((dates) => {
-      //   const sortedDates = Cypress._.sortBy(dates)
-      //   expect(dates, 'sorted date').to.deep.equal(sortedDates)
-      // })
-
       const _order = order === 'asc' ? 'ascending' : 'descending'
 
       // Using chai-sorted plugin for the same assertion
