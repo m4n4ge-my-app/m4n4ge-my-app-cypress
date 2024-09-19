@@ -58,7 +58,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
   /**
  * @param { 'asc' | 'desc' | 'az' | 'za'} order
  */
-  function verifyApplicationsTableSortOrder(columnName, order) {
+  function verifySinglePageSortOrder(columnName, order) {
     expect(order, 'order').to.be.oneOf(['asc', 'desc', 'az', 'za'])
     cy.get('.applications-table').within(($table) => {
       const _order = (order === 'asc' || order === 'az') ? 'ascending' : (order === 'desc' || order === 'za') ? 'descending' : 'unknown'
@@ -74,6 +74,19 @@ describe('m4n4ge-my-app: dashboard tests', () => {
           throw new Error(`Unknown column name: ${columnName}`);
       }
     })
+  }
+
+  function verifyApplicationsTableSortOrder (columnName, order) {
+    function verifyAllPages() {
+      verifySinglePageSortOrder(columnName, order)
+      cy.get('button[aria-label="Go to next page"]').then($nextButton => {
+        if (!$nextButton.is(':disabled')) { // Ensure to stop the recursion when the next button is disabled
+          cy.wrap($nextButton).click().wait(1000)
+          verifyAllPages() // Recursively call the function for the next page
+        }
+      })
+    }
+    verifyAllPages()
   }
 
   it('logs in successfully', () => {
@@ -198,17 +211,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     selectExpertUser()
     cy.get("#expandCollapseButton").click().wait(1000)
   
-    function verifyAllPages() {
-      verifyApplicationsTableSortOrder('applicationDate','asc')
-      cy.get('button[aria-label="Go to next page"]').then($nextButton => {
-        if (!$nextButton.is(':disabled')) { // Ensure to stop the recursion when the next button is disabled
-          cy.wrap($nextButton).click().wait(1000)
-          verifyAllPages() // Recursively call the function for the next page
-        }
-      })
-    }
-  
-    verifyAllPages()
+    verifyApplicationsTableSortOrder('applicationDate', 'asc')
   })
 
   it('should sort the application dates in descending order', () => {
@@ -218,17 +221,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     // Sort the applications by date in descending order by clicking on the date column header
     cy.contains('span', 'Job Application Date').click().wait(1000)
   
-    function verifyAllPages() {
-      verifyApplicationsTableSortOrder('applicationDate', 'desc')
-      cy.get('button[aria-label="Go to next page"]').then($nextButton => {
-        if (!$nextButton.is(':disabled')) {
-          cy.wrap($nextButton).click().wait(1000)
-          verifyAllPages()
-        }
-      })
-    }
-  
-    verifyAllPages()
+    verifyApplicationsTableSortOrder('applicationDate', 'desc')
   })
 
   it('should sort the employer names in ascending order', () => {
@@ -238,17 +231,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     // Sort the applications by employer name in ascending order by clicking on the date column header
     cy.contains('span', 'Employer Name').click().wait(1000)
   
-    function verifyAllPages() {
-      verifyApplicationsTableSortOrder('employerName','az')
-      cy.get('button[aria-label="Go to next page"]').then($nextButton => {
-        if (!$nextButton.is(':disabled')) { // Ensure to stop the recursion when the next button is disabled
-          cy.wrap($nextButton).click().wait(1000)
-          verifyAllPages() // Recursively call the function for the next page
-        }
-      })
-    }
-  
-    verifyAllPages()
+    verifyApplicationsTableSortOrder('employerName', 'az')
   })
 
   it('should sort the employer names in descending order', () => {
@@ -258,17 +241,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     // Sort the applications by employer name in ascending order by clicking on the date column header
     cy.contains('span', 'Employer Name').click().wait(500).click().wait(500) // dblClick is not working so click twice
   
-    function verifyAllPages() {
-      verifyApplicationsTableSortOrder('employerName', 'za')
-      cy.get('button[aria-label="Go to next page"]').then($nextButton => {
-        if (!$nextButton.is(':disabled')) { // Ensure to stop the recursion when the next button is disabled
-          cy.wrap($nextButton).click().wait(1000)
-          verifyAllPages() // Recursively call the function for the next page
-        }
-      })
-    }
-  
-    verifyAllPages()
+    verifyApplicationsTableSortOrder('employerName', 'za')
   })
 
 })
