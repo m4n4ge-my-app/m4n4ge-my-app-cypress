@@ -13,6 +13,27 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.contains('button', 'Sign In').click()
   })
 
+  function selectExpertUser() {
+    // Switch to expert user account as new user has no applications to delete
+    cy.contains('label', 'John Doe (Expert User)').click().wait(1000)
+
+    // Close/acknowledge the demo user banner
+    cy.get('.css-14mo1hq > .MuiButton-root').click().wait(1000)
+
+    // Check if expert user data is loaded
+    cy.contains('h6', 'John').should('be.visible')
+    cy.get('div.MuiAvatar-root').should('contain', 'J')
+  }   
+
+  function verifyApplicationsTableCounts() {
+    cy.get('.applications-table').each(($table) => {
+      cy.wrap($table).find('.applications-count').invoke('text').then((badgeCount) => {
+        cy.log("badgeCount: " + badgeCount)
+        cy.wrap($table).find('tbody tr.applications-table-row').its('length').should('eq', parseInt(badgeCount))
+      })
+    })
+  }
+
   it('logs in successfully', () => {
     // Check if the user is redirected to the dashboard
     cy.location('pathname').should('equal', '/dashboard')
@@ -56,15 +77,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
   })
 
   it('should prevent demo user from deleting a new application while on dashboard page', () => {
-    // Switch to expert user account as new user has no applications to delete
-    cy.contains('label', 'John Doe (Expert User)').click().wait(1000)
-
-    // Close/acknowledge the demo user banner
-    cy.get('.css-14mo1hq > .MuiButton-root').click().wait(1000)
-
-    // Check if expert user data is loaded
-    cy.contains('h6', 'John').should('be.visible')
-    cy.get('div.MuiAvatar-root').should('contain', 'J')
+    selectExpertUser()
 
     // Find the first application and click on it to get the delete button and click it
     cy.get('tbody>tr').first().click().contains('button', 'Delete').click()
@@ -81,15 +94,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
   })
 
   it('should prevent demo user from deleting a new application while on edit application page', () => {
-    // Switch to expert user account as new user has no applications to delete
-    cy.contains('label', 'John Doe (Expert User)').click().wait(1000)
-
-    // Close/acknowledge the demo user banner
-    cy.get('.css-14mo1hq > .MuiButton-root').click().wait(1000)
-
-    // Check if expert user data is loaded
-    cy.contains('h6', 'John').should('be.visible')
-    cy.get('div.MuiAvatar-root').should('contain', 'J')
+    selectExpertUser()
 
     // Find the first application and click on it to get the edit button and click it
     cy.get('tbody>tr').first().click().contains('button', 'Edit').click()
@@ -112,11 +117,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
   })
 
   it('should prevent demo user from editing an existing application', () => {
-    // Switch to expert user account as new user has no applications to edit
-    cy.contains('label', 'John Doe (Expert User)').click().wait(1000)
-
-    // Close/acknowledge the demo user banner
-    cy.get('.css-14mo1hq > .MuiButton-root').click().wait(1000)
+    selectExpertUser()
 
     // Find the first application and click on it to get the edit button and click it
     cy.get('tbody>tr').first().click().contains('button', 'Edit').click()
@@ -136,40 +137,19 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.location('pathname').should('include', '/edit')
   })
 
-  it.only('matches the number of applications listed in each table with the count displayed on the table badge', () => {
-    // Switch to expert user account as new user has no applications to delete
-    cy.contains('label', 'John Doe (Expert User)').click().wait(1000)
-
-    // Close/acknowledge the demo user banner
-    cy.get('.css-14mo1hq > .MuiButton-root').click().wait(1000)
-
-    // Check if expert user data is loaded
-    cy.contains('h6', 'John').should('be.visible')
-    cy.get('div.MuiAvatar-root').should('contain', 'J')
+  it('matches the number of applications listed in each table with the count displayed on the table badge', () => {
+    selectExpertUser()
 
     // Get the count of applications listed in each day card and compare it with the count displayed on the day card badge
-    cy.get('.applications-table').each(($table) => {
-      cy.wrap($table).find('.applications-count').invoke('text').then((badgeCount) => {
-        cy.log("badgeCount: " + badgeCount)
-        cy.wrap($table).find('tbody tr.applications-table-row').its('length').should('eq', parseInt(badgeCount))
-      })
-    })
+    verifyApplicationsTableCounts()
 
     // Check the above test for weeks view
     cy.contains('button', 'Weeks').click().wait(1000)
-    cy.get('.applications-table').each(($table) => {
-      cy.wrap($table).find('.applications-count').invoke('text').then((badgeCount) => {
-        cy.wrap($table).find('tbody tr.applications-table-row').its('length').should('eq', parseInt(badgeCount))
-      })
-    })
+    verifyApplicationsTableCounts()
 
     // Check the above test for months view
     cy.contains('button', 'Months').click().wait(1000)
-    cy.get('.applications-table').each(($table) => {
-      cy.wrap($table).find('.applications-count').invoke('text').then((badgeCount) => {
-        cy.wrap($table).find('tbody tr.applications-table-row').its('length').should('eq', parseInt(badgeCount))
-      })
-    })
+    verifyApplicationsTableCounts()
   })
 
 })
