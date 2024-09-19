@@ -38,7 +38,8 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     })
   }
 
-  function verifyApplicationsTableSortOrder() {
+  function verifyApplicationsTableSortOrder(order) {
+    expect(order, 'order').to.be.oneOf(['asc', 'desc'])
     cy.get('.applications-table').within(($table) => {
 
       // cy.wrap($table)
@@ -193,7 +194,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.get("#expandCollapseButton").click().wait(1000)
   
     function verifyAllPages() {
-      verifyApplicationsTableSortOrder()
+      verifyApplicationsTableSortOrder('asc')
       cy.get('button[aria-label="Go to next page"]').then($nextButton => {
         if (!$nextButton.is(':disabled')) { // Ensure to stop the recursion when the next button is disabled
           cy.wrap($nextButton).click().wait(1000)
