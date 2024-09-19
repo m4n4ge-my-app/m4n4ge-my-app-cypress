@@ -55,9 +55,6 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     .print('dates %o')
   }
 
-  /**
- * @param { 'asc' | 'desc' | 'az' | 'za'} order
- */
   function verifySinglePageSortOrder(columnName, order) {
     expect(order, 'order').to.be.oneOf(['asc', 'desc', 'az', 'za'])
     cy.get('.applications-table').within(($table) => {
@@ -76,6 +73,9 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     })
   }
 
+  /**
+   * @param { 'asc' | 'desc' | 'az' | 'za'} order
+   */
   function verifyApplicationsTableSortOrder (columnName, order) {
     function verifyAllPages() {
       verifySinglePageSortOrder(columnName, order)
