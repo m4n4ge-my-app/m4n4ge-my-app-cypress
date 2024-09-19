@@ -41,16 +41,9 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     })
   }
 
-  function getTableDates(parentTable) {
+  function getTableColumnValues(parentTable, columnSelector) {
     return cy.wrap(parentTable)
-    .find('.applicationDate')
-    .map('innerText')
-    .print('dates %o')
-  }
-
-  function getTableEmployerNames(parentTable) {
-    return cy.wrap(parentTable)
-    .find('.employerName')
+    .find(columnSelector)
     .map('innerText')
     .print('dates %o')
   }
@@ -62,11 +55,18 @@ describe('m4n4ge-my-app: dashboard tests', () => {
 
       switch (columnName) {
         case 'applicationDate':
-          getTableDates($table).should(`be.${_order}`);
+          getTableColumnValues($table, '.applicationDate').should(`be.${_order}`);
           break;
         case 'employerName':
-          getTableEmployerNames($table).should(`be.${_order}`);
+          getTableColumnValues($table, '.employerName').should(`be.${_order}`);
           break;
+        case 'roleName':
+          getTableColumnValues($table, '.roleName').should(`be.${_order}`);
+          break;
+        case 'location':
+          getTableColumnValues($table, '.location').should(`be.${_order}`);
+          break;
+      
         default:
           throw new Error(`Unknown column name: ${columnName}`);
       }
@@ -251,7 +251,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     // Sort the applications by employer name in ascending order by clicking on the date column header
     cy.contains('span', 'Role Name').click().wait(1000)
   
-    verifyApplicationsTableSortOrder('employerName', 'az')
+    verifyApplicationsTableSortOrder('roleName', 'az')
   })
 
   it.only('should sort the role names in descending order', () => {
@@ -261,7 +261,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     // Sort the applications by employer name in ascending order by clicking on the date column header
     cy.contains('span', 'Role Name').click().wait(500).click().wait(500) // dblClick is not working so click twice
   
-    verifyApplicationsTableSortOrder('employerName', 'za')
+    verifyApplicationsTableSortOrder('roleName', 'za')
   })
 
   it.only('should sort the locations in ascending order', () => {
@@ -271,7 +271,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     // Sort the applications by employer name in ascending order by clicking on the date column header
     cy.contains('span', 'Location').click().wait(1000)
   
-    verifyApplicationsTableSortOrder('employerName', 'az')
+    verifyApplicationsTableSortOrder('location', 'az')
   })
 
   it.only('should sort the locations in descending order', () => {
@@ -281,7 +281,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     // Sort the applications by employer name in ascending order by clicking on the date column header
     cy.contains('span', 'Location').click().wait(500).click().wait(500) // dblClick is not working so click twice
   
-    verifyApplicationsTableSortOrder('employerName', 'za')
+    verifyApplicationsTableSortOrder('location', 'za')
   })
 
 })
