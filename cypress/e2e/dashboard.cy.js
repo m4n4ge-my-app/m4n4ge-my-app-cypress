@@ -192,7 +192,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     verifyApplicationsTableCounts()
   })
 
-  it.only('should sort the application dates in ascending order', () => {
+  it('should sort the application dates in ascending order', () => {
     selectExpertUser()
     cy.get("#expandCollapseButton").click().wait(1000)
   
@@ -209,7 +209,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     verifyAllPages()
   })
 
-  it.only('should sort the application dates in descending order', () => {
+  it('should sort the application dates in descending order', () => {
     selectExpertUser()
     cy.get("#expandCollapseButton").click().wait(1000)
 
