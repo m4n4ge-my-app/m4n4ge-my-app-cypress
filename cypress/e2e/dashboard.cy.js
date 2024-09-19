@@ -1,3 +1,6 @@
+// @ts-check
+/// <reference types="cypress" />
+
 import 'cypress-map'
 
 chai.use(require('chai-sorted'))
@@ -38,6 +41,9 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     })
   }
 
+  /**
+ * @param { 'asc' | 'desc' } order
+ */
   function verifyApplicationsTableSortOrder(order) {
     expect(order, 'order').to.be.oneOf(['asc', 'desc'])
     cy.get('.applications-table').within(($table) => {
