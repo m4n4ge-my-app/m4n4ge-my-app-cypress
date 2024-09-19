@@ -136,7 +136,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.location('pathname').should('include', '/edit')
   })
 
-  it.only('matches the number of applications listed in each day card with the count displayed on the day card badge', () => {
+  it.only('matches the number of applications listed in each table with the count displayed on the table badge', () => {
     // Switch to expert user account as new user has no applications to delete
     cy.contains('label', 'John Doe (Expert User)').click().wait(1000)
 
@@ -151,6 +151,22 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.get('.applications-table').each(($table) => {
       cy.wrap($table).find('.applications-count').invoke('text').then((badgeCount) => {
         cy.log("badgeCount: " + badgeCount)
+        cy.wrap($table).find('tbody tr.applications-table-row').its('length').should('eq', parseInt(badgeCount))
+      })
+    })
+
+    // Check the above test for weeks view
+    cy.contains('button', 'Weeks').click().wait(1000)
+    cy.get('.applications-table').each(($table) => {
+      cy.wrap($table).find('.applications-count').invoke('text').then((badgeCount) => {
+        cy.wrap($table).find('tbody tr.applications-table-row').its('length').should('eq', parseInt(badgeCount))
+      })
+    })
+
+    // Check the above test for months view
+    cy.contains('button', 'Months').click().wait(1000)
+    cy.get('.applications-table').each(($table) => {
+      cy.wrap($table).find('.applications-count').invoke('text').then((badgeCount) => {
         cy.wrap($table).find('tbody tr.applications-table-row').its('length').should('eq', parseInt(badgeCount))
       })
     })
