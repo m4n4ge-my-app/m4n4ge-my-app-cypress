@@ -1,5 +1,7 @@
 import 'cypress-map'
 
+chai.use(require('chai-sorted'))
+
 describe('m4n4ge-my-app: dashboard tests', () => {
   before(() => {
     // Runs once before all tests in the block
@@ -57,6 +59,14 @@ describe('m4n4ge-my-app: dashboard tests', () => {
         const sortedDates = Cypress._.sortBy(dates)
         expect(dates, 'sorted date').to.deep.equal(sortedDates)
       })
+
+      // Using chai-sorted plugin for the same assertion
+      cy.wrap($table)
+        .find('.applicationDate')
+        .map('innerText')
+        .print('dates %o')
+        .should('be.sorted')
+
     })
   }
 
