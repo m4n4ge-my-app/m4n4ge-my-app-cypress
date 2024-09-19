@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "cypress": "^13.14.2",
-    "cypress-dotenv": "^2.0.0"
+    "cypress-dotenv": "^2.0.0",
+    "cypress-map": "^1.40.0"
   }
 }
