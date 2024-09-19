@@ -1,3 +1,5 @@
+import 'cypress-map'
+
 describe('m4n4ge-my-app: dashboard tests', () => {
   before(() => {
     // Runs once before all tests in the block
@@ -30,6 +32,30 @@ describe('m4n4ge-my-app: dashboard tests', () => {
       cy.wrap($table).find('.applications-count').invoke('text').then((badgeCount) => {
         cy.log("badgeCount: " + badgeCount)
         cy.wrap($table).find('tbody tr.applications-table-row').its('length').should('eq', parseInt(badgeCount))
+      })
+    })
+  }
+
+  function verifyApplicationsTableSortOrder() {
+    cy.get('.applications-table').within(($table) => {
+
+      cy.wrap($table)
+        .find('.applicationDate')
+        .map('innerText')
+        .print('dates %o')
+        .then((dates) => {
+        const sortedDates = [...dates].sort()
+        expect(dates).to.deep.equal(sortedDates)
+      })
+
+      // Alternative way to assert the sort order
+      cy.wrap($table)
+        .find('.applicationDate')
+        .map('innerText')
+        .print('dates %o')
+        .should((dates) => {
+        const sortedDates = Cypress._.sortBy(dates)
+        expect(dates, 'sorted date').to.deep.equal(sortedDates)
       })
     })
   }
@@ -150,6 +176,12 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     // Check the above test for months view
     cy.contains('button', 'Months').click().wait(1000)
     verifyApplicationsTableCounts()
+  })
+
+  it.only('should sort the application dates in ascending order', () => {
+    selectExpertUser()
+    cy.get("#expandCollapseButton").click().wait(1000)
+    verifyApplicationsTableSortOrder()
   })
 
 })
