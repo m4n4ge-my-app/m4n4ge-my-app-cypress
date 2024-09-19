@@ -41,15 +41,15 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     })
   }
 
-  function getTableDates(parentTabke) {
-    return cy.wrap(parentTabke)
+  function getTableDates(parentTable) {
+    return cy.wrap(parentTable)
     .find('.applicationDate')
     .map('innerText')
     .print('dates %o')
   }
 
-  function getTableEmployerNames(parentTabke) {
-    return cy.wrap(parentTabke)
+  function getTableEmployerNames(parentTable) {
+    return cy.wrap(parentTable)
     .find('.employerName')
     .map('innerText')
     .print('dates %o')
@@ -240,6 +240,46 @@ describe('m4n4ge-my-app: dashboard tests', () => {
 
     // Sort the applications by employer name in ascending order by clicking on the date column header
     cy.contains('span', 'Employer Name').click().wait(500).click().wait(500) // dblClick is not working so click twice
+  
+    verifyApplicationsTableSortOrder('employerName', 'za')
+  })
+
+  it.only('should sort the role names in ascending order', () => {
+    selectExpertUser()
+    cy.get("#expandCollapseButton").click().wait(1000)
+
+    // Sort the applications by employer name in ascending order by clicking on the date column header
+    cy.contains('span', 'Role Name').click().wait(1000)
+  
+    verifyApplicationsTableSortOrder('employerName', 'az')
+  })
+
+  it.only('should sort the role names in descending order', () => {
+    selectExpertUser()
+    cy.get("#expandCollapseButton").click().wait(1000)
+
+    // Sort the applications by employer name in ascending order by clicking on the date column header
+    cy.contains('span', 'Role Name').click().wait(500).click().wait(500) // dblClick is not working so click twice
+  
+    verifyApplicationsTableSortOrder('employerName', 'za')
+  })
+
+  it.only('should sort the locations in ascending order', () => {
+    selectExpertUser()
+    cy.get("#expandCollapseButton").click().wait(1000)
+
+    // Sort the applications by employer name in ascending order by clicking on the date column header
+    cy.contains('span', 'Location').click().wait(1000)
+  
+    verifyApplicationsTableSortOrder('employerName', 'az')
+  })
+
+  it.only('should sort the locations in descending order', () => {
+    selectExpertUser()
+    cy.get("#expandCollapseButton").click().wait(1000)
+
+    // Sort the applications by employer name in ascending order by clicking on the date column header
+    cy.contains('span', 'Location').click().wait(500).click().wait(500) // dblClick is not working so click twice
   
     verifyApplicationsTableSortOrder('employerName', 'za')
   })
