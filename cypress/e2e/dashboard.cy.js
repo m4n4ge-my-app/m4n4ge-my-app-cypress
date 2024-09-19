@@ -67,13 +67,14 @@ describe('m4n4ge-my-app: dashboard tests', () => {
       //   expect(dates, 'sorted date').to.deep.equal(sortedDates)
       // })
 
+      const _order = order === 'asc' ? 'ascending' : 'descending'
+
       // Using chai-sorted plugin for the same assertion
       cy.wrap($table)
         .find('.applicationDate')
         .map('innerText')
         .print('dates %o')
-        .should('be.sorted')
-
+        .should(`be.${_order}`)
     })
   }
 
@@ -205,6 +206,26 @@ describe('m4n4ge-my-app: dashboard tests', () => {
         if (!$nextButton.is(':disabled')) { // Ensure to stop the recursion when the next button is disabled
           cy.wrap($nextButton).click().wait(1000)
           verifyAllPages() // Recursively call the function for the next page
+        }
+      })
+    }
+  
+    verifyAllPages()
+  })
+
+  it('should sort the application dates in descending order', () => {
+    selectExpertUser()
+    cy.get("#expandCollapseButton").click().wait(1000)
+
+    // Sort the applications by date in descending order by clicking on the date column header
+    cy.contains('span', 'Job Application Date').click().wait(1000)
+  
+    function verifyAllPages() {
+      verifyApplicationsTableSortOrder('desc')
+      cy.get('button[aria-label="Go to next page"]').then($nextButton => {
+        if (!$nextButton.is(':disabled')) {
+          cy.wrap($nextButton).click().wait(1000)
+          verifyAllPages()
         }
       })
     }
