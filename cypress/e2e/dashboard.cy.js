@@ -196,7 +196,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     verifyApplicationsTableCounts()
   })
 
-  it.only('should sort the application dates in ascending order', () => {
+  it('should sort the application dates in ascending order', () => {
     selectExpertUser()
     cy.get("#expandCollapseButton").click().wait(1000)
   
