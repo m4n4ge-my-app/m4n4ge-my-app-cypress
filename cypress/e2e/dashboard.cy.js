@@ -58,18 +58,20 @@ describe('m4n4ge-my-app: dashboard tests', () => {
   /**
  * @param { 'asc' | 'desc' | 'az' | 'za'} order
  */
-  function verifyApplicationsTableSortOrder(order) {
+  function verifyApplicationsTableSortOrder(columnName, order) {
     expect(order, 'order').to.be.oneOf(['asc', 'desc', 'az', 'za'])
     cy.get('.applications-table').within(($table) => {
       const _order = (order === 'asc' || order === 'az') ? 'ascending' : (order === 'desc' || order === 'za') ? 'descending' : 'unknown'
 
-      // Using chai-sorted plugin for the same assertion
-      if(order === 'asc' || order === 'desc') {
-      getTableDates($table)
-        .should(`be.${_order}`)
-      } else {
-        getTableEmployerNames($table)
-          .should(`be.${_order}`)
+      switch (columnName) {
+        case 'applicationDate':
+          getTableDates($table).should(`be.${_order}`);
+          break;
+        case 'employerName':
+          getTableEmployerNames($table).should(`be.${_order}`);
+          break;
+        default:
+          throw new Error(`Unknown column name: ${columnName}`);
       }
     })
   }
@@ -197,7 +199,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.get("#expandCollapseButton").click().wait(1000)
   
     function verifyAllPages() {
-      verifyApplicationsTableSortOrder('asc')
+      verifyApplicationsTableSortOrder('applicationDate','asc')
       cy.get('button[aria-label="Go to next page"]').then($nextButton => {
         if (!$nextButton.is(':disabled')) { // Ensure to stop the recursion when the next button is disabled
           cy.wrap($nextButton).click().wait(1000)
@@ -217,7 +219,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.contains('span', 'Job Application Date').click().wait(1000)
   
     function verifyAllPages() {
-      verifyApplicationsTableSortOrder('desc')
+      verifyApplicationsTableSortOrder('applicationDate', 'desc')
       cy.get('button[aria-label="Go to next page"]').then($nextButton => {
         if (!$nextButton.is(':disabled')) {
           cy.wrap($nextButton).click().wait(1000)
@@ -237,7 +239,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.contains('span', 'Employer Name').click().wait(1000)
   
     function verifyAllPages() {
-      verifyApplicationsTableSortOrder('az')
+      verifyApplicationsTableSortOrder('employerName','az')
       cy.get('button[aria-label="Go to next page"]').then($nextButton => {
         if (!$nextButton.is(':disabled')) { // Ensure to stop the recursion when the next button is disabled
           cy.wrap($nextButton).click().wait(1000)
@@ -257,7 +259,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.contains('span', 'Employer Name').click().wait(500).click().wait(500) // dblClick is not working so click twice
   
     function verifyAllPages() {
-      verifyApplicationsTableSortOrder('za')
+      verifyApplicationsTableSortOrder('employerName', 'za')
       cy.get('button[aria-label="Go to next page"]').then($nextButton => {
         if (!$nextButton.is(':disabled')) { // Ensure to stop the recursion when the next button is disabled
           cy.wrap($nextButton).click().wait(1000)
