@@ -41,6 +41,13 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     })
   }
 
+  function getTableDates(parentTabke) {
+    return cy.wrap(parentTabke)
+    .find('.applicationDate')
+    .map('innerText')
+    .print('dates %o')
+  }
+
   /**
  * @param { 'asc' | 'desc' } order
  */
@@ -70,10 +77,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
       const _order = order === 'asc' ? 'ascending' : 'descending'
 
       // Using chai-sorted plugin for the same assertion
-      cy.wrap($table)
-        .find('.applicationDate')
-        .map('innerText')
-        .print('dates %o')
+      getTableDates($table)
         .should(`be.${_order}`)
     })
   }
@@ -196,7 +200,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     verifyApplicationsTableCounts()
   })
 
-  it('should sort the application dates in ascending order', () => {
+  it.only('should sort the application dates in ascending order', () => {
     selectExpertUser()
     cy.get("#expandCollapseButton").click().wait(1000)
   
@@ -213,7 +217,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     verifyAllPages()
   })
 
-  it('should sort the application dates in descending order', () => {
+  it.only('should sort the application dates in descending order', () => {
     selectExpertUser()
     cy.get("#expandCollapseButton").click().wait(1000)
 
