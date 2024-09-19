@@ -135,4 +135,25 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.contains('div', 'Access Denied: Demonstration accounts do not have the privileges to update an application. Please create a personal account for full access.').should('be.visible')
     cy.location('pathname').should('include', '/edit')
   })
+
+  it.only('matches the number of applications listed in each day card with the count displayed on the day card badge', () => {
+    // Switch to expert user account as new user has no applications to delete
+    cy.contains('label', 'John Doe (Expert User)').click().wait(1000)
+
+    // Close/acknowledge the demo user banner
+    cy.get('.css-14mo1hq > .MuiButton-root').click().wait(1000)
+
+    // Check if expert user data is loaded
+    cy.contains('h6', 'John').should('be.visible')
+    cy.get('div.MuiAvatar-root').should('contain', 'J')
+
+    // Get the count of applications listed in each day card and compare it with the count displayed on the day card badge
+    cy.get('.applications-table').each(($table) => {
+      cy.wrap($table).find('.applications-count').invoke('text').then((badgeCount) => {
+        cy.log("badgeCount: " + badgeCount)
+        cy.wrap($table).find('tbody tr.applications-table-row').its('length').should('eq', parseInt(badgeCount))
+      })
+    })
+  })
+
 })
