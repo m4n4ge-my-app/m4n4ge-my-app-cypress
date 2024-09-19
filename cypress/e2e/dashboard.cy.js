@@ -191,7 +191,18 @@ describe('m4n4ge-my-app: dashboard tests', () => {
   it.only('should sort the application dates in ascending order', () => {
     selectExpertUser()
     cy.get("#expandCollapseButton").click().wait(1000)
-    verifyApplicationsTableSortOrder()
+  
+    function verifyAllPages() {
+      verifyApplicationsTableSortOrder()
+      cy.get('button[aria-label="Go to next page"]').then($nextButton => {
+        if (!$nextButton.is(':disabled')) { // Ensure to stop the recursion when the next button is disabled
+          cy.wrap($nextButton).click().wait(1000)
+          verifyAllPages() // Recursively call the function for the next page
+        }
+      })
+    }
+  
+    verifyAllPages()
   })
 
 })
