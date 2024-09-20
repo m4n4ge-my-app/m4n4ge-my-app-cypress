@@ -284,4 +284,21 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     verifyApplicationsTableSortOrder('location', 'za')
   })
 
+  it('should correctly display application details fetched from the server', () => {
+    selectExpertUser()
+    cy.get("#expandCollapseButton").click().wait(1000)
+
+      // Get all applications displayed on the page
+      cy.contains('Rows per page:').next().click()
+      cy.contains('li', 'All').click().wait(1000)
+
+      // Compare the size of the applications displayed on the page with the applications fetched from the server(fixture date was exported from server)
+      cy.fixture('db.applications.json').then((applications) => {
+      cy.get('.applications-table').within(($table) => {
+        //TODO: generate json array from the UI table and compare it deeply with the fixture data
+        cy.wrap($table).find('.applications-table-row').should('have.length', applications.length)
+      })
+    })
+  })
+
 })
