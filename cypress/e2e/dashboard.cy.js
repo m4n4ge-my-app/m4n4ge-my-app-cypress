@@ -244,7 +244,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     verifyApplicationsTableSortOrder('employerName', 'za')
   })
 
-  it.only('should sort the role names in ascending order', () => {
+  it('should sort the role names in ascending order', () => {
     selectExpertUser()
     cy.get("#expandCollapseButton").click().wait(1000)
 
@@ -254,7 +254,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     verifyApplicationsTableSortOrder('roleName', 'az')
   })
 
-  it.only('should sort the role names in descending order', () => {
+  it('should sort the role names in descending order', () => {
     selectExpertUser()
     cy.get("#expandCollapseButton").click().wait(1000)
 
@@ -264,7 +264,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     verifyApplicationsTableSortOrder('roleName', 'za')
   })
 
-  it.only('should sort the locations in ascending order', () => {
+  it('should sort the locations in ascending order', () => {
     selectExpertUser()
     cy.get("#expandCollapseButton").click().wait(1000)
 
@@ -274,7 +274,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     verifyApplicationsTableSortOrder('location', 'az')
   })
 
-  it.only('should sort the locations in descending order', () => {
+  it('should sort the locations in descending order', () => {
     selectExpertUser()
     cy.get("#expandCollapseButton").click().wait(1000)
 
