@@ -1,0 +1,1700 @@
+[{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a90329a"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Intel",
+  "positionName": "Full Stack Developer",
+  "applicationDate": "Thu May 02 2024 16:39:46 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Tampa, FL",
+  "note": "Requires knowledge of Docker",
+  "workModel": "Remote",
+  "jobPlatform": "WellFound",
+  "applicationStatus": "Applied",
+  "isFavorite": false,
+  "jobPostPostingDate": "Thu Apr 18 2024 12:12:31 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sat May 18 2024 12:12:31 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a90329b"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Palantir",
+  "positionName": "Embedded Systems Engineer",
+  "applicationDate": "Thu May 02 2024 16:39:46 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Indianapolis, IN",
+  "note": "Competitive salary",
+  "workModel": "Remote",
+  "jobPlatform": "Dice",
+  "applicationStatus": "Offer",
+  "isFavorite": false,
+  "jobPostPostingDate": "Sun Apr 14 2024 22:48:00 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Tue May 14 2024 22:48:00 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a90329c"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "PayPal",
+  "positionName": "Cloud Engineer",
+  "applicationDate": "Thu May 30 2024 17:33:57 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Minneapolis, MN",
+  "note": "Opportunities for growth",
+  "workModel": "On-Site",
+  "jobPlatform": "Monster",
+  "applicationStatus": "Rejected",
+  "isFavorite": false,
+  "jobPostPostingDate": "Mon Apr 01 2024 18:59:54 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Wed May 01 2024 18:59:54 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a90329d"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Yahoo",
+  "positionName": "QA Engineer",
+  "applicationDate": "Mon Jun 24 2024 00:57:16 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Columbus, OH",
+  "note": "Offers stock options",
+  "workModel": "Remote",
+  "jobPlatform": "LinkedIn",
+  "applicationStatus": "Engaged",
+  "isFavorite": true,
+  "jobPostPostingDate": "Tue Jun 11 2024 04:33:00 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu Jul 11 2024 04:33:00 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a90329e"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "SpaceX",
+  "positionName": "Embedded Systems Engineer",
+  "applicationDate": "Thu May 30 2024 17:33:57 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Charlotte, NC",
+  "note": "Located in a tech hub",
+  "workModel": "On-Site",
+  "jobPlatform": "Dice",
+  "applicationStatus": "Engaged",
+  "isFavorite": false,
+  "jobPostPostingDate": "Fri May 24 2024 22:40:08 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon Jun 24 2024 22:40:08 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a90329f"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Lyft",
+  "positionName": "Database Administrator",
+  "applicationDate": "Fri Aug 16 2024 15:17:09 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "San Jose, CA",
+  "note": "Great company culture",
+  "workModel": "Hybrid",
+  "jobPlatform": "CareerBuilder",
+  "applicationStatus": "Offer",
+  "isFavorite": true,
+  "jobPostPostingDate": "Thu Aug 08 2024 07:08:36 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sun Sep 08 2024 07:08:36 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032a0"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "SAP",
+  "positionName": "Security Engineer",
+  "applicationDate": "Fri Aug 16 2024 15:17:09 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "New York, NY",
+  "note": "Focus on work-life balance",
+  "workModel": "Remote",
+  "jobPlatform": "LinkedIn",
+  "applicationStatus": "Accepted",
+  "isFavorite": false,
+  "jobPostPostingDate": "Tue Apr 02 2024 11:00:58 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu May 02 2024 11:00:58 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032a1"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Google",
+  "positionName": "QA Engineer",
+  "applicationDate": "Thu May 02 2024 16:39:46 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Atlanta, GA",
+  "note": "Emphasis on cybersecurity",
+  "workModel": "On-Site",
+  "jobPlatform": "Company Website",
+  "applicationStatus": "Offer",
+  "isFavorite": false,
+  "jobPostPostingDate": "Fri Mar 15 2024 07:33:46 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon Apr 15 2024 07:33:46 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032a2"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Uber",
+  "positionName": "Cloud Engineer",
+  "applicationDate": "Thu May 30 2024 17:02:55 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "St. Louis, MO",
+  "note": "Strong leadership",
+  "workModel": "Hybrid",
+  "jobPlatform": "Company Website",
+  "applicationStatus": "Rejected",
+  "isFavorite": false,
+  "jobPostPostingDate": "Fri Mar 01 2024 20:28:34 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Mon Apr 01 2024 20:28:34 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032a3"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Palantir",
+  "positionName": "Backend Developer",
+  "applicationDate": "Sat Jul 27 2024 21:17:38 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "St. Louis, MO",
+  "note": "Requires experience with React",
+  "workModel": "On-Site",
+  "jobPlatform": "LinkedIn",
+  "applicationStatus": "Rejected",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sun Apr 07 2024 14:37:33 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Tue May 07 2024 14:37:33 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032a4"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Atlassian",
+  "positionName": "Web Developer",
+  "applicationDate": "Sun Mar 10 2024 08:39:58 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Cleveland, OH",
+  "note": "Offers stock options",
+  "workModel": "Remote",
+  "jobPlatform": "Dice",
+  "applicationStatus": "Engaged",
+  "isFavorite": false,
+  "jobPostPostingDate": "Fri Mar 08 2024 01:09:58 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Mon Apr 08 2024 01:09:58 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032a5"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "GitHub",
+  "positionName": "Systems Engineer",
+  "applicationDate": "Sat Mar 02 2024 09:52:08 GMT-0500 (Eastern Standard Time)",
+  "jobLocation": "Los Angeles, CA",
+  "note": "Requires knowledge of Docker",
+  "workModel": "On-Site",
+  "jobPlatform": "Glassdoor",
+  "applicationStatus": "Engaged",
+  "isFavorite": false,
+  "jobPostPostingDate": "Fri Mar 01 2024 13:07:50 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Mon Apr 01 2024 13:07:50 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032a6"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "eBay",
+  "positionName": "Frontend Developer",
+  "applicationDate": "Wed May 08 2024 14:26:11 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Detroit, MI",
+  "note": "Great company culture",
+  "workModel": "Remote",
+  "jobPlatform": "WellFound",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Fri Mar 15 2024 07:16:18 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon Apr 15 2024 07:16:18 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032a7"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Salesforce",
+  "positionName": "AI Engineer",
+  "applicationDate": "Mon Jun 10 2024 06:52:29 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "San Diego, CA",
+  "note": "Requires experience with React",
+  "workModel": "On-Site",
+  "jobPlatform": "Other",
+  "applicationStatus": "Interviewing",
+  "isFavorite": true,
+  "jobPostPostingDate": "Tue Apr 09 2024 02:24:20 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu May 09 2024 02:24:20 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032a8"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Dell",
+  "positionName": "Automation Engineer",
+  "applicationDate": "Mon Apr 22 2024 18:41:05 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Columbus, OH",
+  "note": "Offers stock options",
+  "workModel": "Remote",
+  "jobPlatform": "Dice",
+  "applicationStatus": "Engaged",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sun Mar 24 2024 08:33:48 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Wed Apr 24 2024 08:33:48 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032a9"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "HP",
+  "positionName": "Network Engineer",
+  "applicationDate": "Wed Apr 10 2024 02:39:35 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "New York, NY",
+  "note": "Focus on cloud computing",
+  "workModel": "On-Site",
+  "jobPlatform": "Direct Email",
+  "applicationStatus": "Engaged",
+  "isFavorite": true,
+  "jobPostPostingDate": "Fri Mar 15 2024 13:57:15 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon Apr 15 2024 13:57:15 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032aa"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "LinkedIn",
+  "positionName": "Automation Engineer",
+  "applicationDate": "Thu Jun 13 2024 09:52:39 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "New York, NY",
+  "note": "Competitive salary",
+  "workModel": "Remote",
+  "jobPlatform": "FlexJobs",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Wed Mar 27 2024 00:18:32 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sat Apr 27 2024 00:18:32 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032ab"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Facebook",
+  "positionName": "Machine Learning Engineer",
+  "applicationDate": "Thu May 02 2024 16:39:46 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Denver, CO",
+  "note": "Requires knowledge of Docker",
+  "workModel": "Remote",
+  "jobPlatform": "Company Website",
+  "applicationStatus": "Rejected",
+  "isFavorite": false,
+  "jobPostPostingDate": "Fri Mar 15 2024 02:15:17 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon Apr 15 2024 02:15:17 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032ac"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "PayPal",
+  "positionName": "Systems Engineer",
+  "applicationDate": "Mon Jun 10 2024 06:52:29 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Seattle, WA",
+  "note": "Offers stock options",
+  "workModel": "On-Site",
+  "jobPlatform": "Indeed",
+  "applicationStatus": "Rejected",
+  "isFavorite": false,
+  "jobPostPostingDate": "Thu Apr 25 2024 01:54:39 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sat May 25 2024 01:54:39 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032ad"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Spotify",
+  "positionName": "Game Developer",
+  "applicationDate": "Fri Apr 26 2024 01:02:18 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Kansas City, MO",
+  "note": "Remote work available",
+  "workModel": "Remote",
+  "jobPlatform": "Direct Email",
+  "applicationStatus": "Interviewing",
+  "isFavorite": true,
+  "jobPostPostingDate": "Wed Mar 06 2024 11:53:42 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Sat Apr 06 2024 11:53:42 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032ae"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Amazon",
+  "positionName": "Software Engineer",
+  "applicationDate": "Sat Aug 10 2024 21:17:17 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "St. Louis, MO",
+  "note": "Collaborative team",
+  "workModel": "Hybrid",
+  "jobPlatform": "Indeed",
+  "applicationStatus": "Rejected",
+  "isFavorite": false,
+  "jobPostPostingDate": "Fri Mar 01 2024 18:46:54 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Mon Apr 01 2024 18:46:54 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032af"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "SpaceX",
+  "positionName": "Cloud Engineer",
+  "applicationDate": "Tue Mar 05 2024 15:17:33 GMT-0500 (Eastern Standard Time)",
+  "jobLocation": "Austin, TX",
+  "note": "Strong emphasis on AI and ML",
+  "workModel": "On-Site",
+  "jobPlatform": "ZipRecruiter",
+  "applicationStatus": "Rejected",
+  "isFavorite": false,
+  "jobPostPostingDate": "Mon Mar 04 2024 21:48:55 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Thu Apr 04 2024 21:48:55 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032b0"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "MongoDB",
+  "positionName": "Systems Engineer",
+  "applicationDate": "Tue Mar 05 2024 15:17:33 GMT-0500 (Eastern Standard Time)",
+  "jobLocation": "Detroit, MI",
+  "note": "Emphasis on cybersecurity",
+  "workModel": "Hybrid",
+  "jobPlatform": "Dice",
+  "applicationStatus": "Rejected",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sun Mar 03 2024 19:01:00 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Wed Apr 03 2024 19:01:00 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032b1"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Apple",
+  "positionName": "Data Scientist",
+  "applicationDate": "Fri Jul 12 2024 04:25:41 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Philadelphia, PA",
+  "note": "Collaborative team",
+  "workModel": "Remote",
+  "jobPlatform": "CareerBuilder",
+  "applicationStatus": "Interviewing",
+  "isFavorite": true,
+  "jobPostPostingDate": "Fri May 03 2024 14:36:37 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon Jun 03 2024 14:36:37 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032b2"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Apple",
+  "positionName": "Game Developer",
+  "applicationDate": "Sat Apr 06 2024 10:55:12 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Philadelphia, PA",
+  "note": "Strong leadership",
+  "workModel": "Remote",
+  "jobPlatform": "LinkedIn",
+  "applicationStatus": "Offer",
+  "isFavorite": false,
+  "jobPostPostingDate": "Fri Mar 15 2024 15:17:48 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon Apr 15 2024 15:17:48 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032b3"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Zoom",
+  "positionName": "QA Engineer",
+  "applicationDate": "Sat Aug 17 2024 07:23:29 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Detroit, MI",
+  "note": "Requires experience with React",
+  "workModel": "Remote",
+  "jobPlatform": "ZipRecruiter",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Wed Mar 06 2024 05:04:21 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Sat Apr 06 2024 05:04:21 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032b4"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Salesforce",
+  "positionName": "Site Reliability Engineer",
+  "applicationDate": "Wed Apr 10 2024 02:39:35 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Cincinnati, OH",
+  "note": "Focus on work-life balance",
+  "workModel": "Hybrid",
+  "jobPlatform": "Glassdoor",
+  "applicationStatus": "Offer",
+  "isFavorite": true,
+  "jobPostPostingDate": "Tue Mar 05 2024 21:14:22 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Fri Apr 05 2024 21:14:22 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032b5"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "SAP",
+  "positionName": "Embedded Systems Engineer",
+  "applicationDate": "Tue Mar 19 2024 14:12:22 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "San Francisco, CA",
+  "note": "Looking for Python expertise",
+  "workModel": "On-Site",
+  "jobPlatform": "Glassdoor",
+  "applicationStatus": "Engaged",
+  "isFavorite": false,
+  "jobPostPostingDate": "Wed Mar 13 2024 18:17:38 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sat Apr 13 2024 18:17:38 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032b6"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Cisco",
+  "positionName": "Machine Learning Engineer",
+  "applicationDate": "Fri Jun 28 2024 15:54:01 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Pittsburgh, PA",
+  "note": "Requires experience with React",
+  "workModel": "Remote",
+  "jobPlatform": "Monster",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Wed Mar 20 2024 07:36:04 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sat Apr 20 2024 07:36:04 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032b7"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Tesla",
+  "positionName": "Embedded Systems Engineer",
+  "applicationDate": "Sun Jul 14 2024 01:32:24 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "San Francisco, CA",
+  "note": "Competitive salary",
+  "workModel": "Remote",
+  "jobPlatform": "Company Website",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Tue May 21 2024 08:11:09 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Fri Jun 21 2024 08:11:09 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032b8"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Dropbox",
+  "positionName": "DevOps Engineer",
+  "applicationDate": "Mon Jun 03 2024 11:55:42 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "St. Louis, MO",
+  "note": "Focus on work-life balance",
+  "workModel": "Remote",
+  "jobPlatform": "FlexJobs",
+  "applicationStatus": "Offer",
+  "isFavorite": true,
+  "jobPostPostingDate": "Tue May 28 2024 07:51:23 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Fri Jun 28 2024 07:51:23 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032b9"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "ServiceNow",
+  "positionName": "Network Engineer",
+  "applicationDate": "Wed Apr 10 2024 11:30:24 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "San Diego, CA",
+  "note": "Collaborative team",
+  "workModel": "On-Site",
+  "jobPlatform": "FlexJobs",
+  "applicationStatus": "Engaged",
+  "isFavorite": false,
+  "jobPostPostingDate": "Thu Mar 21 2024 17:57:39 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sun Apr 21 2024 17:57:39 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032ba"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Dell",
+  "positionName": "Embedded Systems Engineer",
+  "applicationDate": "Mon Jul 08 2024 08:19:36 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Dallas, TX",
+  "note": "Comprehensive benefits package",
+  "workModel": "On-Site",
+  "jobPlatform": "FlexJobs",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Thu May 16 2024 02:41:55 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sun Jun 16 2024 02:41:55 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032bb"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Zscaler",
+  "positionName": "Network Engineer",
+  "applicationDate": "Tue Aug 13 2024 23:24:26 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Atlanta, GA",
+  "note": "Strong leadership",
+  "workModel": "Hybrid",
+  "jobPlatform": "Company Website",
+  "applicationStatus": "Applied",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sun Jul 14 2024 21:49:03 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Wed Aug 14 2024 21:49:03 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032bc"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Microsoft",
+  "positionName": "AI Engineer",
+  "applicationDate": "Thu May 30 2024 17:33:57 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "San Jose, CA",
+  "note": "Strong emphasis on AI and ML",
+  "workModel": "Hybrid",
+  "jobPlatform": "Other",
+  "applicationStatus": "Offer",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sat Mar 09 2024 09:59:41 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Tue Apr 09 2024 09:59:41 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032bd"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Slack",
+  "positionName": "AI Engineer",
+  "applicationDate": "Mon Mar 18 2024 18:15:04 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Houston, TX",
+  "note": "Focus on work-life balance",
+  "workModel": "Remote",
+  "jobPlatform": "SimplyHired",
+  "applicationStatus": "Rejected",
+  "isFavorite": false,
+  "jobPostPostingDate": "Sat Mar 02 2024 07:58:11 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Tue Apr 02 2024 07:58:11 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032be"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Twitter",
+  "positionName": "Cloud Engineer",
+  "applicationDate": "Sun Jun 09 2024 21:31:39 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Austin, TX",
+  "note": "Flexible working hours",
+  "workModel": "Hybrid",
+  "jobPlatform": "WellFound",
+  "applicationStatus": "Interviewing",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sat Mar 16 2024 21:59:59 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Tue Apr 16 2024 21:59:59 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032bf"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "NVIDIA",
+  "positionName": "Software Engineer",
+  "applicationDate": "Fri May 31 2024 03:41:28 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Minneapolis, MN",
+  "note": "Requires experience with React",
+  "workModel": "On-Site",
+  "jobPlatform": "Dice",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sun Mar 03 2024 03:03:10 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Wed Apr 03 2024 03:03:10 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032c0"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Tesla",
+  "positionName": "Network Engineer",
+  "applicationDate": "Sun Jul 14 2024 22:53:44 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Portland, OR",
+  "note": "Strong emphasis on AI and ML",
+  "workModel": "Hybrid",
+  "jobPlatform": "Direct Email",
+  "applicationStatus": "Applied",
+  "isFavorite": false,
+  "jobPostPostingDate": "Thu Jul 11 2024 21:51:36 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sun Aug 11 2024 21:51:36 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032c1"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Cisco",
+  "positionName": "Software Engineer",
+  "applicationDate": "Sun May 26 2024 02:11:16 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Washington, DC",
+  "note": "Collaborative team",
+  "workModel": "Hybrid",
+  "jobPlatform": "Other",
+  "applicationStatus": "Accepted",
+  "isFavorite": false,
+  "jobPostPostingDate": "Sat Apr 13 2024 18:38:39 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon May 13 2024 18:38:39 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032c2"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Amazon",
+  "positionName": "Automation Engineer",
+  "applicationDate": "Wed May 29 2024 01:59:48 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Cincinnati, OH",
+  "note": "Emphasis on cybersecurity",
+  "workModel": "On-Site",
+  "jobPlatform": "Monster",
+  "applicationStatus": "Rejected",
+  "isFavorite": false,
+  "jobPostPostingDate": "Wed May 01 2024 06:36:52 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sat Jun 01 2024 06:36:52 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032c3"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "HP",
+  "positionName": "Mobile Developer",
+  "applicationDate": "Sun Jul 14 2024 01:32:24 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Columbus, OH",
+  "note": "Work with cutting-edge technology",
+  "workModel": "On-Site",
+  "jobPlatform": "Other",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Tue Apr 23 2024 22:40:04 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu May 23 2024 22:40:04 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032c4"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Twitter",
+  "positionName": "Systems Engineer",
+  "applicationDate": "Sat Jul 13 2024 16:18:55 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Boston, MA",
+  "note": "Great company culture",
+  "workModel": "Hybrid",
+  "jobPlatform": "Indeed",
+  "applicationStatus": "Accepted",
+  "isFavorite": false,
+  "jobPostPostingDate": "Sun May 12 2024 15:31:06 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Wed Jun 12 2024 15:31:06 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032c5"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Datadog",
+  "positionName": "Mobile Developer",
+  "applicationDate": "Thu May 02 2024 16:39:46 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Houston, TX",
+  "note": "Competitive salary",
+  "workModel": "On-Site",
+  "jobPlatform": "Glassdoor",
+  "applicationStatus": "Rejected",
+  "isFavorite": true,
+  "jobPostPostingDate": "Tue Apr 30 2024 01:41:06 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu May 30 2024 01:41:06 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032c6"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Netflix",
+  "positionName": "Backend Developer",
+  "applicationDate": "Thu May 30 2024 17:33:57 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "San Jose, CA",
+  "note": "Requires knowledge of Docker",
+  "workModel": "Remote",
+  "jobPlatform": "Dice",
+  "applicationStatus": "Rejected",
+  "isFavorite": false,
+  "jobPostPostingDate": "Sun Mar 03 2024 14:05:29 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Wed Apr 03 2024 14:05:29 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032c7"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Shopify",
+  "positionName": "QA Engineer",
+  "applicationDate": "Mon Apr 22 2024 18:41:05 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "San Diego, CA",
+  "note": "Focus on cloud computing",
+  "workModel": "Hybrid",
+  "jobPlatform": "LinkedIn",
+  "applicationStatus": "Offer",
+  "isFavorite": true,
+  "jobPostPostingDate": "Wed Apr 17 2024 21:35:49 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Fri May 17 2024 21:35:49 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032c8"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Workday",
+  "positionName": "Site Reliability Engineer",
+  "applicationDate": "Fri Jun 28 2024 08:08:23 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Cleveland, OH",
+  "note": "Opportunities for growth",
+  "workModel": "Hybrid",
+  "jobPlatform": "Glassdoor",
+  "applicationStatus": "Interviewing",
+  "isFavorite": true,
+  "jobPostPostingDate": "Wed May 29 2024 08:16:25 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sat Jun 29 2024 08:16:25 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032c9"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Intel",
+  "positionName": "Full Stack Developer",
+  "applicationDate": "Mon Apr 22 2024 18:41:05 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "St. Louis, MO",
+  "note": "Requires experience with React",
+  "workModel": "Remote",
+  "jobPlatform": "SimplyHired",
+  "applicationStatus": "Interviewing",
+  "isFavorite": true,
+  "jobPostPostingDate": "Tue Apr 16 2024 04:19:25 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu May 16 2024 04:19:25 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032ca"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Pinterest",
+  "positionName": "Machine Learning Engineer",
+  "applicationDate": "Wed Mar 20 2024 06:18:13 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Phoenix, AZ",
+  "note": "Strong leadership",
+  "workModel": "Hybrid",
+  "jobPlatform": "ZipRecruiter",
+  "applicationStatus": "Offer",
+  "isFavorite": true,
+  "jobPostPostingDate": "Thu Mar 14 2024 22:46:22 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sun Apr 14 2024 22:46:22 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032cb"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "MongoDB",
+  "positionName": "Embedded Systems Engineer",
+  "applicationDate": "Mon Jul 08 2024 10:05:05 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Washington, DC",
+  "note": "Focus on work-life balance",
+  "workModel": "On-Site",
+  "jobPlatform": "Other",
+  "applicationStatus": "Offer",
+  "isFavorite": false,
+  "jobPostPostingDate": "Thu Mar 14 2024 14:16:20 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sun Apr 14 2024 14:16:20 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032cc"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Slack",
+  "positionName": "Full Stack Developer",
+  "applicationDate": "Wed May 01 2024 02:28:17 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Detroit, MI",
+  "note": "Strong emphasis on AI and ML",
+  "workModel": "Hybrid",
+  "jobPlatform": "FlexJobs",
+  "applicationStatus": "Offer",
+  "isFavorite": true,
+  "jobPostPostingDate": "Fri Apr 12 2024 17:44:35 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sun May 12 2024 17:44:35 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032cd"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "IBM",
+  "positionName": "Machine Learning Engineer",
+  "applicationDate": "Tue Mar 26 2024 02:17:26 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Denver, CO",
+  "note": "Work with cutting-edge technology",
+  "workModel": "Hybrid",
+  "jobPlatform": "Dice",
+  "applicationStatus": "Engaged",
+  "isFavorite": false,
+  "jobPostPostingDate": "Wed Mar 06 2024 02:08:11 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Sat Apr 06 2024 02:08:11 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032ce"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Workday",
+  "positionName": "Mobile Developer",
+  "applicationDate": "Sat Apr 13 2024 04:56:53 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Washington, DC",
+  "note": "Comprehensive benefits package",
+  "workModel": "On-Site",
+  "jobPlatform": "Glassdoor",
+  "applicationStatus": "Engaged",
+  "isFavorite": false,
+  "jobPostPostingDate": "Tue Mar 05 2024 04:49:32 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Fri Apr 05 2024 04:49:32 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032cf"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Palantir",
+  "positionName": "Frontend Developer",
+  "applicationDate": "Mon Mar 04 2024 09:45:57 GMT-0500 (Eastern Standard Time)",
+  "jobLocation": "Los Angeles, CA",
+  "note": "Focus on cloud computing",
+  "workModel": "Hybrid",
+  "jobPlatform": "Direct Email",
+  "applicationStatus": "Applied",
+  "isFavorite": false,
+  "jobPostPostingDate": "Sun Mar 03 2024 21:49:50 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Wed Apr 03 2024 21:49:50 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032d0"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Zscaler",
+  "positionName": "Automation Engineer",
+  "applicationDate": "Sat Jun 08 2024 16:09:29 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Cleveland, OH",
+  "note": "Looking for Python expertise",
+  "workModel": "On-Site",
+  "jobPlatform": "FlexJobs",
+  "applicationStatus": "Engaged",
+  "isFavorite": false,
+  "jobPostPostingDate": "Mon May 20 2024 22:01:25 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu Jun 20 2024 22:01:25 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032d1"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Snowflake",
+  "positionName": "Embedded Systems Engineer",
+  "applicationDate": "Tue Mar 05 2024 15:17:33 GMT-0500 (Eastern Standard Time)",
+  "jobLocation": "Kansas City, MO",
+  "note": "Requires experience with React",
+  "workModel": "Hybrid",
+  "jobPlatform": "Glassdoor",
+  "applicationStatus": "Engaged",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sat Mar 02 2024 11:08:41 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Tue Apr 02 2024 11:08:41 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032d2"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "CrowdStrike",
+  "positionName": "Web Developer",
+  "applicationDate": "Mon Jun 03 2024 11:55:42 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Minneapolis, MN",
+  "note": "Requires experience with React",
+  "workModel": "Hybrid",
+  "jobPlatform": "LinkedIn",
+  "applicationStatus": "Rejected",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sun Apr 28 2024 22:17:35 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Tue May 28 2024 22:17:35 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032d3"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Reddit",
+  "positionName": "Embedded Systems Engineer",
+  "applicationDate": "Tue May 28 2024 19:55:28 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Pittsburgh, PA",
+  "note": "Remote work available",
+  "workModel": "Remote",
+  "jobPlatform": "Company Website",
+  "applicationStatus": "Rejected",
+  "isFavorite": true,
+  "jobPostPostingDate": "Fri Apr 26 2024 15:12:54 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sun May 26 2024 15:12:54 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032d4"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Dell",
+  "positionName": "DevOps Engineer",
+  "applicationDate": "Tue Jun 11 2024 16:42:14 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Boston, MA",
+  "note": "Great for career advancement",
+  "workModel": "Remote",
+  "jobPlatform": "Dice",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Mon May 13 2024 06:33:50 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu Jun 13 2024 06:33:50 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032d5"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Lyft",
+  "positionName": "Embedded Systems Engineer",
+  "applicationDate": "Wed Mar 06 2024 15:59:31 GMT-0500 (Eastern Standard Time)",
+  "jobLocation": "Los Angeles, CA",
+  "note": "Focus on cloud computing",
+  "workModel": "Hybrid",
+  "jobPlatform": "SimplyHired",
+  "applicationStatus": "Applied",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sat Mar 02 2024 22:53:37 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Tue Apr 02 2024 22:53:37 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032d6"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Yahoo",
+  "positionName": "Machine Learning Engineer",
+  "applicationDate": "Mon Jun 10 2024 06:52:29 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Chicago, IL",
+  "note": "Comprehensive benefits package",
+  "workModel": "Hybrid",
+  "jobPlatform": "LinkedIn",
+  "applicationStatus": "Applied",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sun May 12 2024 17:11:30 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Wed Jun 12 2024 17:11:30 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032d7"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Lyft",
+  "positionName": "Full Stack Developer",
+  "applicationDate": "Fri Aug 16 2024 15:17:09 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Indianapolis, IN",
+  "note": "Requires knowledge of Docker",
+  "workModel": "Remote",
+  "jobPlatform": "LinkedIn",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Fri Jul 05 2024 07:33:05 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon Aug 05 2024 07:33:05 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032d8"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "NVIDIA",
+  "positionName": "Automation Engineer",
+  "applicationDate": "Sat Aug 17 2024 07:23:29 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Cleveland, OH",
+  "note": "Focus on cloud computing",
+  "workModel": "On-Site",
+  "jobPlatform": "SimplyHired",
+  "applicationStatus": "Engaged",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sun Aug 11 2024 11:37:57 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Wed Sep 11 2024 11:37:57 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032d9"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "GitHub",
+  "positionName": "Backend Developer",
+  "applicationDate": "Tue Jun 25 2024 02:18:21 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Dallas, TX",
+  "note": "Great company culture",
+  "workModel": "Hybrid",
+  "jobPlatform": "Company Website",
+  "applicationStatus": "Applied",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sat Jun 01 2024 22:47:50 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon Jul 01 2024 22:47:50 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032da"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Pinterest",
+  "positionName": "Security Engineer",
+  "applicationDate": "Mon Jun 03 2024 11:55:42 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Pittsburgh, PA",
+  "note": "Located in a tech hub",
+  "workModel": "On-Site",
+  "jobPlatform": "CareerBuilder",
+  "applicationStatus": "Engaged",
+  "isFavorite": false,
+  "jobPostPostingDate": "Fri Mar 08 2024 13:13:39 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Mon Apr 08 2024 13:13:39 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032db"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "eBay",
+  "positionName": "Network Engineer",
+  "applicationDate": "Sun Jul 14 2024 01:32:24 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Charlotte, NC",
+  "note": "Strong leadership",
+  "workModel": "On-Site",
+  "jobPlatform": "Monster",
+  "applicationStatus": "Accepted",
+  "isFavorite": false,
+  "jobPostPostingDate": "Mon Mar 18 2024 12:22:20 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu Apr 18 2024 12:22:20 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032dc"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "VMware",
+  "positionName": "Systems Engineer",
+  "applicationDate": "Thu Aug 01 2024 18:08:06 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Philadelphia, PA",
+  "note": "Great for career advancement",
+  "workModel": "Remote",
+  "jobPlatform": "Direct Email",
+  "applicationStatus": "Offer",
+  "isFavorite": true,
+  "jobPostPostingDate": "Thu May 02 2024 12:54:24 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sun Jun 02 2024 12:54:24 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032dd"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "ServiceNow",
+  "positionName": "Automation Engineer",
+  "applicationDate": "Sun Jul 14 2024 07:42:54 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Miami, FL",
+  "note": "Great company culture",
+  "workModel": "On-Site",
+  "jobPlatform": "Glassdoor",
+  "applicationStatus": "Applied",
+  "isFavorite": false,
+  "jobPostPostingDate": "Thu May 16 2024 15:22:17 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sun Jun 16 2024 15:22:17 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032de"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Spotify",
+  "positionName": "QA Engineer",
+  "applicationDate": "Thu May 30 2024 17:33:57 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Philadelphia, PA",
+  "note": "Innovative projects",
+  "workModel": "Remote",
+  "jobPlatform": "WellFound",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sun Mar 10 2024 20:20:06 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Wed Apr 10 2024 20:20:06 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032df"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Amazon",
+  "positionName": "Game Developer",
+  "applicationDate": "Tue Mar 05 2024 15:17:33 GMT-0500 (Eastern Standard Time)",
+  "jobLocation": "Charlotte, NC",
+  "note": "Located in a tech hub",
+  "workModel": "On-Site",
+  "jobPlatform": "WellFound",
+  "applicationStatus": "Applied",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sat Mar 02 2024 09:36:10 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Tue Apr 02 2024 09:36:10 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032e0"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Cisco",
+  "positionName": "Data Scientist",
+  "applicationDate": "Tue May 21 2024 07:43:00 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Miami, FL",
+  "note": "Collaborative team",
+  "workModel": "Hybrid",
+  "jobPlatform": "Other",
+  "applicationStatus": "Offer",
+  "isFavorite": false,
+  "jobPostPostingDate": "Tue Apr 09 2024 09:49:51 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu May 09 2024 09:49:51 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032e1"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Workday",
+  "positionName": "DevOps Engineer",
+  "applicationDate": "Sun Mar 10 2024 11:21:32 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Houston, TX",
+  "note": "Requires experience with React",
+  "workModel": "Hybrid",
+  "jobPlatform": "ZipRecruiter",
+  "applicationStatus": "Rejected",
+  "isFavorite": false,
+  "jobPostPostingDate": "Wed Mar 06 2024 07:19:20 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Sat Apr 06 2024 07:19:20 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032e2"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "LinkedIn",
+  "positionName": "Game Developer",
+  "applicationDate": "Sat Aug 10 2024 21:17:17 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Austin, TX",
+  "note": "Great company culture",
+  "workModel": "Remote",
+  "jobPlatform": "Glassdoor",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sat Mar 02 2024 23:43:43 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Tue Apr 02 2024 23:43:43 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032e3"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "SpaceX",
+  "positionName": "Backend Developer",
+  "applicationDate": "Mon Jun 10 2024 06:52:29 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Atlanta, GA",
+  "note": "Competitive salary",
+  "workModel": "Hybrid",
+  "jobPlatform": "Direct Email",
+  "applicationStatus": "Engaged",
+  "isFavorite": true,
+  "jobPostPostingDate": "Tue Apr 09 2024 22:38:04 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu May 09 2024 22:38:04 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032e4"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Spotify",
+  "positionName": "Cloud Engineer",
+  "applicationDate": "Thu May 23 2024 15:31:08 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "San Jose, CA",
+  "note": "Focus on work-life balance",
+  "workModel": "Remote",
+  "jobPlatform": "ZipRecruiter",
+  "applicationStatus": "Engaged",
+  "isFavorite": false,
+  "jobPostPostingDate": "Fri May 10 2024 23:01:01 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon Jun 10 2024 23:01:01 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032e5"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Facebook",
+  "positionName": "Frontend Developer",
+  "applicationDate": "Sun Jul 14 2024 01:32:24 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Cincinnati, OH",
+  "note": "Great company culture",
+  "workModel": "On-Site",
+  "jobPlatform": "Other",
+  "applicationStatus": "Accepted",
+  "isFavorite": false,
+  "jobPostPostingDate": "Tue May 28 2024 20:47:23 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Fri Jun 28 2024 20:47:23 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032e6"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Microsoft",
+  "positionName": "AI Engineer",
+  "applicationDate": "Thu Mar 21 2024 19:57:42 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Dallas, TX",
+  "note": "Competitive salary",
+  "workModel": "On-Site",
+  "jobPlatform": "Company Website",
+  "applicationStatus": "Rejected",
+  "isFavorite": false,
+  "jobPostPostingDate": "Sat Mar 02 2024 18:44:31 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Tue Apr 02 2024 18:44:31 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032e7"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "VMware",
+  "positionName": "Mobile Developer",
+  "applicationDate": "Sun Jul 21 2024 09:59:40 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "St. Louis, MO",
+  "note": "Offers stock options",
+  "workModel": "Remote",
+  "jobPlatform": "LinkedIn",
+  "applicationStatus": "Engaged",
+  "isFavorite": false,
+  "jobPostPostingDate": "Sat Jun 22 2024 00:59:45 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon Jul 22 2024 00:59:45 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032e8"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Cisco",
+  "positionName": "Data Scientist",
+  "applicationDate": "Mon Jun 03 2024 11:55:42 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "St. Louis, MO",
+  "note": "Looking for Python expertise",
+  "workModel": "Hybrid",
+  "jobPlatform": "Glassdoor",
+  "applicationStatus": "Offer",
+  "isFavorite": false,
+  "jobPostPostingDate": "Thu Apr 11 2024 09:21:22 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sat May 11 2024 09:21:22 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032e9"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Reddit",
+  "positionName": "AI Engineer",
+  "applicationDate": "Tue May 28 2024 19:55:28 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Boston, MA",
+  "note": "Strong emphasis on AI and ML",
+  "workModel": "On-Site",
+  "jobPlatform": "Glassdoor",
+  "applicationStatus": "Offer",
+  "isFavorite": true,
+  "jobPostPostingDate": "Thu Apr 04 2024 23:06:45 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sat May 04 2024 23:06:45 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032ea"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Snap",
+  "positionName": "Security Engineer",
+  "applicationDate": "Wed Apr 10 2024 02:39:35 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "New York, NY",
+  "note": "Innovative projects",
+  "workModel": "On-Site",
+  "jobPlatform": "Glassdoor",
+  "applicationStatus": "Applied",
+  "isFavorite": false,
+  "jobPostPostingDate": "Sat Mar 02 2024 03:09:49 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Tue Apr 02 2024 03:09:49 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032eb"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Stripe",
+  "positionName": "AI Engineer",
+  "applicationDate": "Wed Apr 10 2024 11:30:24 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "San Francisco, CA",
+  "note": "Requires knowledge of Docker",
+  "workModel": "Hybrid",
+  "jobPlatform": "LinkedIn",
+  "applicationStatus": "Interviewing",
+  "isFavorite": false,
+  "jobPostPostingDate": "Sat Mar 23 2024 02:42:10 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Tue Apr 23 2024 02:42:10 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032ec"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Slack",
+  "positionName": "Cloud Engineer",
+  "applicationDate": "Thu Aug 08 2024 17:19:52 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Orlando, FL",
+  "note": "Looking for Python expertise",
+  "workModel": "Remote",
+  "jobPlatform": "FlexJobs",
+  "applicationStatus": "Applied",
+  "isFavorite": true,
+  "jobPostPostingDate": "Tue Jun 11 2024 21:42:05 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu Jul 11 2024 21:42:05 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032ed"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Intel",
+  "positionName": "Web Developer",
+  "applicationDate": "Tue May 28 2024 19:55:28 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Phoenix, AZ",
+  "note": "Opportunities for growth",
+  "workModel": "Hybrid",
+  "jobPlatform": "ZipRecruiter",
+  "applicationStatus": "Offer",
+  "isFavorite": false,
+  "jobPostPostingDate": "Mon Mar 25 2024 07:35:59 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu Apr 25 2024 07:35:59 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032ee"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Airbnb",
+  "positionName": "Mobile Developer",
+  "applicationDate": "Sat Jun 22 2024 07:59:02 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "St. Louis, MO",
+  "note": "Strong leadership",
+  "workModel": "On-Site",
+  "jobPlatform": "Other",
+  "applicationStatus": "Engaged",
+  "isFavorite": true,
+  "jobPostPostingDate": "Wed Apr 10 2024 02:56:19 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Fri May 10 2024 02:56:19 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032ef"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Snowflake",
+  "positionName": "Automation Engineer",
+  "applicationDate": "Mon Jun 10 2024 06:52:29 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Cleveland, OH",
+  "note": "Great company culture",
+  "workModel": "Hybrid",
+  "jobPlatform": "CareerBuilder",
+  "applicationStatus": "Interviewing",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sat May 04 2024 19:06:15 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Tue Jun 04 2024 19:06:15 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032f0"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Okta",
+  "positionName": "Backend Developer",
+  "applicationDate": "Wed Apr 24 2024 03:06:39 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Tampa, FL",
+  "note": "Strong leadership",
+  "workModel": "On-Site",
+  "jobPlatform": "SimplyHired",
+  "applicationStatus": "Interviewing",
+  "isFavorite": false,
+  "jobPostPostingDate": "Tue Mar 26 2024 23:01:28 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Fri Apr 26 2024 23:01:28 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032f1"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Qualcomm",
+  "positionName": "Web Developer",
+  "applicationDate": "Sat Jul 27 2024 21:17:38 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Indianapolis, IN",
+  "note": "Offers stock options",
+  "workModel": "On-Site",
+  "jobPlatform": "Monster",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Thu Jun 06 2024 01:38:31 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sat Jul 06 2024 01:38:31 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032f2"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Dropbox",
+  "positionName": "Frontend Developer",
+  "applicationDate": "Wed Apr 10 2024 02:39:35 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Los Angeles, CA",
+  "note": "Remote work available",
+  "workModel": "Remote",
+  "jobPlatform": "Monster",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Thu Mar 07 2024 19:08:37 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Sun Apr 07 2024 19:08:37 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032f3"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Pinterest",
+  "positionName": "Machine Learning Engineer",
+  "applicationDate": "Sat Aug 17 2024 07:23:29 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Indianapolis, IN",
+  "note": "Requires experience with React",
+  "workModel": "Remote",
+  "jobPlatform": "CareerBuilder",
+  "applicationStatus": "Accepted",
+  "isFavorite": true,
+  "jobPostPostingDate": "Mon Apr 22 2024 14:32:30 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Wed May 22 2024 14:32:30 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032f4"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Dell",
+  "positionName": "Frontend Developer",
+  "applicationDate": "Sat Aug 17 2024 07:23:29 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Miami, FL",
+  "note": "Located in a tech hub",
+  "workModel": "Hybrid",
+  "jobPlatform": "Glassdoor",
+  "applicationStatus": "Accepted",
+  "isFavorite": false,
+  "jobPostPostingDate": "Fri May 17 2024 23:46:06 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon Jun 17 2024 23:46:06 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032f5"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Cisco",
+  "positionName": "Automation Engineer",
+  "applicationDate": "Thu Mar 28 2024 19:05:37 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Minneapolis, MN",
+  "note": "Great company culture",
+  "workModel": "Hybrid",
+  "jobPlatform": "Other",
+  "applicationStatus": "Applied",
+  "isFavorite": true,
+  "jobPostPostingDate": "Mon Mar 11 2024 01:03:56 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu Apr 11 2024 01:03:56 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032f6"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Slack",
+  "positionName": "Frontend Developer",
+  "applicationDate": "Mon Jul 08 2024 09:23:43 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Miami, FL",
+  "note": "Great company culture",
+  "workModel": "Remote",
+  "jobPlatform": "ZipRecruiter",
+  "applicationStatus": "Applied",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sat Jun 01 2024 21:31:16 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Mon Jul 01 2024 21:31:16 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032f7"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Stripe",
+  "positionName": "Machine Learning Engineer",
+  "applicationDate": "Sun Mar 10 2024 11:21:32 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "San Jose, CA",
+  "note": "Competitive salary",
+  "workModel": "Hybrid",
+  "jobPlatform": "Company Website",
+  "applicationStatus": "Engaged",
+  "isFavorite": true,
+  "jobPostPostingDate": "Sat Mar 09 2024 10:24:09 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Tue Apr 09 2024 10:24:09 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032f8"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Workday",
+  "positionName": "Web Developer",
+  "applicationDate": "Fri Mar 01 2024 23:39:53 GMT-0500 (Eastern Standard Time)",
+  "jobLocation": "Cincinnati, OH",
+  "note": "Requires experience with React",
+  "workModel": "Hybrid",
+  "jobPlatform": "CareerBuilder",
+  "applicationStatus": "Rejected",
+  "isFavorite": false,
+  "jobPostPostingDate": "Fri Mar 01 2024 01:50:21 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Mon Apr 01 2024 01:50:21 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032f9"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Dell",
+  "positionName": "Frontend Developer",
+  "applicationDate": "Sat May 04 2024 05:02:30 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "San Jose, CA",
+  "note": "Opportunities for growth",
+  "workModel": "On-Site",
+  "jobPlatform": "CareerBuilder",
+  "applicationStatus": "Accepted",
+  "isFavorite": false,
+  "jobPostPostingDate": "Sun Apr 21 2024 22:50:25 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Tue May 21 2024 22:50:25 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032fa"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Dropbox",
+  "positionName": "Backend Developer",
+  "applicationDate": "Sun Jun 23 2024 13:55:33 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "San Diego, CA",
+  "note": "Innovative projects",
+  "workModel": "Remote",
+  "jobPlatform": "WellFound",
+  "applicationStatus": "Rejected",
+  "isFavorite": false,
+  "jobPostPostingDate": "Thu May 30 2024 00:35:18 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Sun Jun 30 2024 00:35:18 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032fb"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Pinterest",
+  "positionName": "Game Developer",
+  "applicationDate": "Sun Mar 10 2024 11:21:32 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Phoenix, AZ",
+  "note": "Comprehensive benefits package",
+  "workModel": "Hybrid",
+  "jobPlatform": "LinkedIn",
+  "applicationStatus": "Applied",
+  "isFavorite": false,
+  "jobPostPostingDate": "Mon Mar 04 2024 02:50:21 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Thu Apr 04 2024 02:50:21 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032fc"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Dell",
+  "positionName": "Machine Learning Engineer",
+  "applicationDate": "Thu Jul 11 2024 02:52:44 GMT-0400 (Eastern Daylight Time)",
+  "jobLocation": "Houston, TX",
+  "note": "Strong emphasis on AI and ML",
+  "workModel": "On-Site",
+  "jobPlatform": "Dice",
+  "applicationStatus": "Offer",
+  "isFavorite": true,
+  "jobPostPostingDate": "Tue Apr 02 2024 07:14:03 GMT-0400 (Eastern Daylight Time)",
+  "jobPostEndingDate": "Thu May 02 2024 07:14:03 GMT-0400 (Eastern Daylight Time)"
+},
+{
+  "_id": {
+    "$oid": "66cb0d644b9e19924a9032fd"
+  },
+  "userId": "66b7cfe0f28bb61c67d0e18a",
+  "employerName": "Cisco",
+  "positionName": "QA Engineer",
+  "applicationDate": "Tue Mar 05 2024 15:17:33 GMT-0500 (Eastern Standard Time)",
+  "jobLocation": "St. Louis, MO",
+  "note": "Comprehensive benefits package",
+  "workModel": "Remote",
+  "jobPlatform": "Direct Email",
+  "applicationStatus": "Applied",
+  "isFavorite": false,
+  "jobPostPostingDate": "Sun Mar 03 2024 00:47:09 GMT-0500 (Eastern Standard Time)",
+  "jobPostEndingDate": "Wed Apr 03 2024 00:47:09 GMT-0400 (Eastern Daylight Time)"
+}]

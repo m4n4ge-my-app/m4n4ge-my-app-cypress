@@ -1,6 +1,11 @@
 {
   "dependencies": {
+    "chai-sorted": "^0.2.0",
     "cypress": "^13.14.2",
-    "cypress-dotenv": "^2.0.0"
+    "cypress-dotenv": "^2.0.0",
+    "cypress-map": "^1.40.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.8"
   }
 }
