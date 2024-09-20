@@ -294,9 +294,18 @@ describe('m4n4ge-my-app: dashboard tests', () => {
 
       // Compare the size of the applications displayed on the page with the applications fetched from the server(fixture date was exported from server)
       cy.fixture('db.applications.json').then((applications) => {
-      cy.get('.applications-table').within(($table) => {
-        //TODO: generate json array from the UI table and compare it deeply with the fixture data
-        cy.wrap($table).find('.applications-table-row').should('have.length', applications.length)
+      //TODO: generate json array from the UI table and compare it deeply with the fixture data
+      // cy.get('.applications-table').within(($table) => {
+      //   cy.wrap($table).find('.applications-table-row').should('have.length', applications.length)
+      // })
+
+      // This approach is testing to see if the data from fixture is displayed on the UI, can be alternate to the proposed TODO above
+      applications.forEach((application) => {
+        cy.get('.applications-table').within(() => {
+          cy.contains('.employerName', application.employerName)
+          cy.contains('.roleName', application.positionName)
+          cy.contains('.location', application.jobLocation)
+        })
       })
     })
   })
