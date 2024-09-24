@@ -69,4 +69,19 @@ describe("m4n4ge-my-app: login tests", () => {
             cy.url().should('eq', Cypress.config().baseUrl)
         })
     })
+
+    it("should redirect invalid urls to the base url", () => {
+        const someInvalidUrls = [
+            '/invalid-page',
+            '/nonexistent',
+            '/404',
+            '/random-url',
+            '/unknown-route'
+          ];
+
+          someInvalidUrls.forEach(route => {
+            cy.visit(route)
+            cy.url().should('eq', Cypress.config().baseUrl)
+        })
+    })
 })
