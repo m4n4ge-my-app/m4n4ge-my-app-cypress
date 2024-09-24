@@ -17,9 +17,33 @@ describe("m4n4ge-my-app: login tests", () => {
     })
 
     it("should display an error message for an invalid email address", () => {
-        cy.get('input[name="email"]').type('new_user')
+        const invalidEmails = [
+            'new_user',
+            'invalidemail.com',
+            'invalid@',
+            '@domain.com',
+            'invalid@@domain.com',
+            'invalid@domain!.com',
+            'invalid email@domain.com',
+            'invalid@domain',
+            //TODO: below test data are not throwing error message as expected, need to investigate validity of these data or fronted validation logic
+            // '.invalid@domain.com',
+            // 'invalid.@domain.com',
+            // 'invalid@domain..com'
+          ];
+        
+        invalidEmails.forEach(email => {
+            cy.get('input[name="email"]').type(email)
 
-        cy.get('input[name="email"]').parent().should('have.class', 'Mui-error')
-        cy.contains('p', 'Invalid email address').should('exist').and('be.visible')
+            // Check the behavior of the email input field when an invalid email is entered
+            cy.get('input[name="email"]').parent().should('have.class', 'Mui-error')
+            cy.contains('p', 'Invalid email address').should('exist').and('be.visible')
+
+            // Check the behavior of the email input field when no email is entered
+            cy.get('input[name="email"]').clear()
+            cy.get('input[name="email"]').parent().should('have.class', 'Mui-error')
+            cy.contains('p', 'Email is required').should('exist').and('be.visible')
+        })
+        
     })
 })
