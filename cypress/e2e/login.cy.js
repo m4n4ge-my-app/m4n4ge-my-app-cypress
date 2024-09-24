@@ -38,11 +38,11 @@ describe("m4n4ge-my-app: login tests", () => {
             LoginPage.getEmailInput().type(email)
 
             // Check the behavior of the email input field when an invalid email is entered
-            LoginPage.displayInputErrors('Invalid email address')
+            LoginPage.displayInputErrors('email', 'Invalid email address')
 
             // Check the behavior of the email input field when no email is entered
             LoginPage.getEmailInput().clear()
-            LoginPage.displayInputErrors('Email is required')
+            LoginPage.displayInputErrors('email', 'Email is required')
         })
         
     })
@@ -83,5 +83,11 @@ describe("m4n4ge-my-app: login tests", () => {
             cy.visit(route)
             cy.url().should('eq', Cypress.config().baseUrl)
         })
+    })
+
+    it("should display error messages for empty email and password fields", () => {
+        LoginPage.getSignInButton().click()
+        LoginPage.displayInputErrors('email', 'Email is required')
+        LoginPage.displayInputErrors('password', 'Password is required')
     })
 })

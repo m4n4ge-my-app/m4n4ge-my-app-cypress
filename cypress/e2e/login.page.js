@@ -7,11 +7,14 @@ export const LoginPage = {
     getPasswordInput() {
         return cy.get('input[name="password"]')
     },
+    getInputField(type) {
+        return cy.get(`input[name="${type}"]`)
+    },
     getSignInButton() {
         return cy.contains('button', 'Sign In')
     },
-    displayInputErrors(errorString) {
-        this.getEmailInput().parent().should('have.class', 'Mui-error')
+    displayInputErrors(type, errorString) {
+        this.getInputField(type).parent().should('have.class', 'Mui-error')
         cy.contains('p', errorString).should('exist').and('be.visible')
     },
     displayToastError(errorString) {
