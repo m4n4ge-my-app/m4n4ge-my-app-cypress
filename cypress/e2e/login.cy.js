@@ -46,4 +46,27 @@ describe("m4n4ge-my-app: login tests", () => {
         })
         
     })
+
+    // Note: This test should be placed carefully, as it requires the user to be logged out before hand if it follows tests that perform successful logins.
+    it("should prevent an anonymous user from accessing private routes without logging in", () => {
+        const somePrivateRoutes = [
+            '/dashboard',
+            '/add',
+            '/resumes',
+            '/coverletters',
+            '/calendar',
+            '/descriptions',
+            '/todos',
+            '/interview',
+            '/automated',
+            '/archives',
+            '/profile',
+            '/settings'
+        ]
+
+        somePrivateRoutes.forEach(route => {
+            cy.visit(route)
+            cy.url().should('eq', Cypress.config().baseUrl)
+        })
+    })
 })
