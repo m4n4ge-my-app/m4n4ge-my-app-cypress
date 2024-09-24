@@ -15,4 +15,11 @@ describe("m4n4ge-my-app: login tests", () => {
 
         cy.contains('div.MuiAlert-message', 'Invalid email or password').should('exist').and('be.visible')
     })
+
+    it("should display an error message for an invalid email address", () => {
+        cy.get('input[name="email"]').type('new_user')
+
+        cy.get('input[name="email"]').parent().should('have.class', 'Mui-error')
+        cy.contains('p', 'Invalid email address').should('exist').and('be.visible')
+    })
 })
