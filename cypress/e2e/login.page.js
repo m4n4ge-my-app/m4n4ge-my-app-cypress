@@ -13,6 +13,9 @@ export const LoginPage = {
     getSignInButton() {
         return cy.contains('button', 'Sign In')
     },
+    getAvatar() {
+        return cy.get('button[aria-label="Account settings"]')
+    },
     displayInputErrors(type, errorString) {
         this.getInputField(type).parent().should('have.class', 'Mui-error')
         cy.contains('p', errorString).should('exist').and('be.visible')
@@ -31,5 +34,9 @@ export const LoginPage = {
             cy.window().then(win => win.localStorage.getItem('user'));
         })
         cy.visit('/dashboard')
+    },
+    logout() {
+        this.getAvatar().click()
+        cy.contains('li', 'Logout').click()
     }
 }

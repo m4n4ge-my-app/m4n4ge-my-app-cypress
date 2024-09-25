@@ -308,4 +308,10 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     })
   })
 
+  it('logs out successfully', () => {
+    LoginPage.logout()
+    // Check if the user is redirected to the landing page
+    cy.location('pathname').should('equal', '/')
+  })
+
 })
