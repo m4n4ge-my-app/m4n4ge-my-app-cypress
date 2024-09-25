@@ -2,7 +2,6 @@
 /// <reference types="cypress" />
 
 import 'cypress-map'
-import 'cypress-data-session'
 import { LoginPage } from './login.page'
 
 chai.use(require('chai-sorted'))
