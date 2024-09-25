@@ -11,13 +11,20 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     cy.visit('/')
   })
 
+  let user
   beforeEach(() => {
-    // Runs before each test in the block
-    cy.visit('/')
-    cy.get(':nth-child(1) > a > .MuiButtonBase-root').click()
-    cy.get('input[name="email"]').type('new_user@m4n4gemy.app')
-    cy.get('input[name="password"]').type(Cypress.env('NEW_USER_PASSWORD'))
-    cy.contains('button', 'Sign In').click()
+    // Runs before each test in the block 
+    if (user) {
+      cy.window().then(win =>  win.localStorage.setItem('user', user));
+      cy.visit('/dashboard');
+    } else {
+      cy.visit('/');
+      cy.get(':nth-child(1) > a > .MuiButtonBase-root').click()
+      cy.get('input[name="email"]').type('new_user@m4n4gemy.app')
+      cy.get('input[name="password"]').type(Cypress.env('NEW_USER_PASSWORD'))
+      cy.contains('button', 'Sign In').click().wait(3000)
+      cy.window().then(win =>  user = win.localStorage.getItem('user'));
+    }
   })
 
   function selectExpertUser() {
