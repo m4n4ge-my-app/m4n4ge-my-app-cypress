@@ -307,6 +307,28 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     })
   })
 
+  it.only('should correctly seach applications', () => {
+    selectExpertUser()
+    cy.get("#expandCollapseButton").click().wait(1000)
+
+    cy.fixture('db.applications.json').then((applications) => {
+      const searchQuery = 'Workday'
+      const filteredApplications = applications.filter(application => application.employerName.includes(searchQuery))
+      
+      // Search for applications with the search query on UI
+      cy.get('input[placeholder="Search by employer, role, etc."]').type(searchQuery).wait(1000)
+
+      // Check if number of applications displayed on the page matches the number of applications fetched from the server
+      cy.get('tbody tr.applications-table-row').its('length').should('eq', filteredApplications.length)
+
+      // Check if the total number of applications displayed on rows per page matches the number of applications fetched from the server
+      cy.get('p.MuiTablePagination-displayedRows').invoke('text').then((text) => {
+        const [pageInterval, of, totalApplications] = text.split(' ')
+        expect(parseInt(totalApplications)).to.equal(filteredApplications.length)
+      })
+    })
+  })
+
   it('logs out successfully', () => {
     LoginPage.logout()
     // Check if the user is redirected to the landing page
