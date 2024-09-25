@@ -1,6 +1,5 @@
 const { defineConfig } = require("cypress");
 const dotenvPlugin = require('cypress-dotenv');
-const registerDataSession = require('cypress-data-session/src/plugin')
 
 module.exports = defineConfig({
   e2e: {
@@ -10,8 +9,6 @@ module.exports = defineConfig({
     watchForFileChanges: false,
     setupNodeEvents(on, config) {
       // implement node event listeners here
-
-      registerDataSession(on, config)
 
       // Load environment variables from .env file
       config = dotenvPlugin(config);
