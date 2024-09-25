@@ -16,6 +16,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     // Runs before each test in the block
     cy.dataSession({ 
       name: 'user session',
+      shareAcrossSpecs: true,
       setup: () => {
         cy.visit('/');
         cy.get(':nth-child(1) > a > .MuiButtonBase-root').click()
