@@ -307,7 +307,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     })
   })
 
-  it.only('should correctly seach applications', () => {
+  it('should correctly seach applications', () => {
     selectExpertUser()
     cy.get("#expandCollapseButton").click().wait(1000)
 
