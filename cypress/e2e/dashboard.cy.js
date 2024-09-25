@@ -2,6 +2,8 @@
 /// <reference types="cypress" />
 
 import 'cypress-map'
+import 'cypress-data-session'
+import { LoginPage } from './login.page'
 
 chai.use(require('chai-sorted'))
 
@@ -13,11 +15,7 @@ describe('m4n4ge-my-app: dashboard tests', () => {
 
   beforeEach(() => {
     // Runs before each test in the block
-    cy.visit('/')
-    cy.get(':nth-child(1) > a > .MuiButtonBase-root').click()
-    cy.get('input[name="email"]').type('new_user@m4n4gemy.app')
-    cy.get('input[name="password"]').type(Cypress.env('NEW_USER_PASSWORD'))
-    cy.contains('button', 'Sign In').click()
+    LoginPage.login('new_user@m4n4gemy.app', Cypress.env('NEW_USER_PASSWORD'))
   })
 
   function selectExpertUser() {
@@ -308,6 +306,12 @@ describe('m4n4ge-my-app: dashboard tests', () => {
         })
       })
     })
+  })
+
+  it('logs out successfully', () => {
+    LoginPage.logout()
+    // Check if the user is redirected to the landing page
+    cy.location('pathname').should('equal', '/')
   })
 
 })
