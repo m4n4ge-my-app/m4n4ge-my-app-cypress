@@ -329,6 +329,37 @@ describe('m4n4ge-my-app: dashboard tests', () => {
     })
   })
 
+  it.only('should correctly display seached applications details on edit page', () => {
+    selectExpertUser()
+    cy.get("#expandCollapseButton").click().wait(1000)
+
+    cy.fixture('db.applications.json').then((applications) => {
+      const searchQuery = 'Workday'
+      const filteredApplications = applications.filter(application => application.employerName.includes(searchQuery))
+
+      const sortedApplcations = filteredApplications
+        .filter(application => application.employerName.includes(searchQuery))
+        .sort((a, b) => a.positionName.localeCompare(b.positionName));
+      
+      // Search for applications with the search query on UI
+      cy.get('input[placeholder="Search by employer, role, etc."]').type(searchQuery).wait(1000)
+      cy.contains('thead th','Role Name').click().wait(1000)
+
+      // Check if number of applications displayed on the page matches the number of applications fetched from the server
+      cy.get('tbody tr.applications-table-row').each(($row, index) => {
+        cy.wrap($row).click().wait(1000).find('button').contains('Edit').click()
+
+
+        // Check if the data displayed on the edit page matches the data fetched from the server
+        cy.get('input[name="employerName"]').should('have.value', sortedApplcations[index].employerName)
+        cy.get('input[name="positionName"]').should('have.value', sortedApplcations[index].positionName)
+        cy.get('input[name="jobLocation"]').should('have.value', sortedApplcations[index].jobLocation)
+
+        cy.location().go('back')
+      })
+    })
+  })
+
   it('logs out successfully', () => {
     LoginPage.logout()
     // Check if the user is redirected to the landing page
